@@ -1,0 +1,30 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog title = "{i18n>workCenter}">
+		<content>
+			<Table id = "workCentertableId">
+				<headerToolbar>
+					<Toolbar>
+						<content>
+							<ToolbarSpacer/>
+							<SearchField id = "workCenterSearch" width="40%" liveChange= "onWorkCenterSearch"/>
+						</content>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column>
+						<Text text="{i18n>plant}" />
+					</Column>
+					<Column>
+						<Text text="{i18n>workCenter}" />
+					</Column>
+					<Column>
+						<Text text="{i18n>shortDescription}" />
+					</Column>
+				</columns>
+			</Table>
+		</content>
+		<buttons>
+			<Button text="Cancel" press="onWorkCenterPressOK"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

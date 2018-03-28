@@ -1,0 +1,37 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog title="{i18n>material}">
+		<content>
+			<Table id = "MatResTbId" items="{MatModel>/results}">
+				<headerToolbar>
+					<Toolbar>
+						<content>
+							<ToolbarSpacer/>
+							<SearchField id ="matSearch" width="40%" liveChange="onMatSearch" search = "onMatBackendSearch"/>
+						</content>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column>
+						<Text text="{i18n>materialcode}"/>
+					</Column>
+					<Column>
+						<Text text="{i18n>description}"/>
+					</Column>
+					<Column>
+						<Text text="{i18n>plant}"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Navigation" press="onMaterialItemPress">
+						<Text text="{MatModel>Material}"/>
+						<Text text="{MatModel>MaterialDescription}"/>
+						<Text text="{MatModel>Plant}"/>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		<buttons>
+			<Button text="Cancel" press="onMaterialPressOK"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

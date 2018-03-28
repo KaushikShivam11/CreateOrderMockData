@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ColumnListItem press="onPlantItemPress">
+		<Input showValueHelp="true"  value ="{reservationModel>Material}" valueHelpRequest="onMaterialPress"/>
+		<Input  value ="{reservationModel>MaterialDescription}" enabled="false"/>
+		<Input  value ="{reservationModel>Plant}" enabled="false"/>
+		<Input value ="{reservationModel>Quantity}" />
+		<Button icon = "sap-icon://delete" visible="{reservationModel>visible}" press = "onRowDelete" class= "sapUiLargeMarginBegin"/>
+	</ColumnListItem>
+</core:FragmentDefinition>

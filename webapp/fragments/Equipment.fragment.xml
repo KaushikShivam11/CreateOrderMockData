@@ -1,0 +1,33 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog title="{i18n>equipment}">
+		<content>
+			<Table id = "equipmentTbId" items="{equipmentSuccessModel>/results}">
+				<headerToolbar>
+					<Toolbar>
+						<content>
+							<ToolbarSpacer/>
+							<SearchField id = "eqSearch" width="40%" liveChange = "onEquipmentSearch" search = "onEquipmentBackendSearch"/>
+						</content>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column>
+						<Text text="{i18n>equipment}"/>
+					</Column>
+					<Column>
+						<Text text="{i18n>description}"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type = "Navigation" press = "onEquipmentItemPress">
+						<Text text="{equipmentSuccessModel>Equipment}"/>
+						<Text text="{equipmentSuccessModel>EquipmentDescription}"/>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		<buttons>
+			<Button text="Cancel" press="onEquipmentPressOK"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

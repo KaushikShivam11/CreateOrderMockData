@@ -1,0 +1,37 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog title="{i18n>mainWorkCenter_Plant}">
+		<content>
+			<Table id="plantTbId" items="{plantSuccessModel>/results}">
+				<headerToolbar>
+					<Toolbar>
+						<content>
+							<ToolbarSpacer/>
+							<SearchField id = "plantSearch" width="40%" liveChange="onPlantSearch"/>
+						</content>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column>
+						<Text text="{i18n>plant}"/>
+					</Column>
+					<Column>
+						<Text text="{i18n>city}"/>
+					</Column>
+					<Column>
+						<Text text="{i18n>name}"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Navigation" press="onPlantItemPress">
+						<Text text="{plantSuccessModel>Plant}"/>
+						<Text text="{plantSuccessModel>City}"/>
+						<Text text="{plantSuccessModel>Name}"/>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		<buttons>
+			<Button text="Cancel" press="onMainWorkPressOK"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

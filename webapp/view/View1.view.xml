@@ -1,0 +1,64 @@
+<mvc:View controllerName="com.sapCreateMaintenenceOrder.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<f:SimpleForm id="SimpleFormChange354" editable="true" title="{i18n>createOrder}" layout="ResponsiveGridLayout" labelSpanXL="3"
+						labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="2" emptySpanM="4" emptySpanS="0"
+						columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+						<f:content>
+							<Label required="true" text="{i18n>orderType}"/>
+							<Input id="orderTypeId" value="{createOrderModel>/OrderType}" showValueHelp="true" valueHelpRequest="onOrderTypePress"/>
+							<Label required="true" text="{i18n>mainWorkCenter_Plant}"/>
+							<Input id="plantId" value="{createOrderModel>/WorkCenterPlant}" showValueHelp="true" valueHelpRequest="onWorkCenterPlantPress"/>
+							<Label required="true" text="{i18n>equipment}"/>
+							<Input id="equipmentId" value="{createOrderModel>/Equipment}" showValueHelp="true" valueHelpRequest="onEquipmentPress"/>
+							<Label required="true" text="{i18n>Opr_ShortText}"/>
+							<Input value="{createOrderModel>/Description}"/>
+							<Label required="true" text="{i18n>reportedBy}"/>
+							<Input id="reportedById" value="{createOrderModel>/ReportedBy}" showValueHelp="true" valueHelpRequest="onReportedByPress"/>
+							<Label required="true" text="{i18n>workCenter}"/>
+							<Input id="workCenterId" value="{createOrderModel>/WorkCenterCode}" showValueHelp="true" valueHelpRequest="onWorkCenterPress"/>
+						</f:content>
+					</f:SimpleForm>
+					<Table id="reservationTableID">
+						<headerToolbar>
+							<Toolbar>
+								<content>
+									<Title text="{i18n>reservation}" level="H2"/>
+									<ToolbarSpacer/>
+									<Button icon="sap-icon://add" press="onAddIconPress"/>
+								</content>
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column>
+								<Text text="{i18n>material}"/>
+							</Column>
+							<Column>
+								<Text text="{i18n>materialDescription}"/>
+							</Column>
+							<Column>
+								<Text text="{i18n>plant}"/>
+							</Column>
+							<Column>
+								<Text text="{i18n>quantity}"/>
+							</Column>
+							<Column>
+								<Text text=""/>
+							</Column>
+						</columns>
+					</Table>
+				</content>
+				<footer>
+					<Toolbar>
+						<ToolbarSpacer/>
+						<Button text="{i18n>createorder}" type="Accept" press="onCreateOrder"/>
+						<Button text="{i18n>reset}" type="Reject" press="onResetOrder"/>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

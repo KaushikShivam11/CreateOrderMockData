@@ -1,0 +1,33 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog title="{i18n>orderType}">
+		<content>
+			<Table id ="orderTypeTbId" items="{orderSuccessModel>/results}">
+				<headerToolbar>
+					<Toolbar>
+						<content>
+							<ToolbarSpacer/>
+							<SearchField id ="orderSearch" width="40%" liveChange = "onOrderTypeSearch"/>
+						</content>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column>
+						<Text text="{i18n>type}" />
+					</Column>
+					<Column>
+						<Text text="{i18n>name}" />
+					</Column>
+				</columns>
+				<items >
+					<ColumnListItem type = "Navigation" press = "onOrderTypeItemPress">
+						<Text text="{orderSuccessModel>OrderType}"/>
+						<Text text="{orderSuccessModel>Text}"/>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		<buttons>
+			<Button text="Cancel" press="onOrderTypePressOK"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

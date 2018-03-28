@@ -1,0 +1,82 @@
+{
+    "resources": [
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "model/reservation.json"
+        },
+        {
+            "name": "localService/ZPM_MORDER_RESERV_SRV/metadata.xml"
+        },
+        {
+            "name": "localService/metadata.xml"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "view/View1.view.xml"
+        },
+        {
+            "name": "controller/View1.controller.js"
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "extended_runnable_file.html"
+        },
+        {
+            "name": ".user.project.json"
+        },
+        {
+            "name": "index.html"
+        },
+        {
+            "name": "resources.json",
+            "merged": true
+        },
+        {
+            "name": ".project.json"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "fragments/Equipment.fragment.xml"
+        },
+        {
+            "name": "fragments/Reservation.fragment.xml"
+        },
+        {
+            "name": "fragments/ReportedBy.fragment.xml"
+        },
+        {
+            "name": "fragments/MainWorkCenter.fragment.xml"
+        },
+        {
+            "name": "fragments/WorkCenter.fragment.xml"
+        },
+        {
+            "name": "fragments/OrderType.fragment.xml"
+        },
+        {
+            "name": "fragments/Material.fragment.xml"
+        },
+        {
+            "name": "fragments/ReservationPlant.fragment.xml"
+        },
+        {
+            "name": "css/style.css"
+        }
+    ]
+}

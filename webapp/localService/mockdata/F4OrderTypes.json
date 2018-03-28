@@ -1,0 +1,61 @@
+{
+	"d": {
+		"results": [{
+			"__metadata": {
+				"id": "http://pgldadfsaph.mypiramal.com:8000/sap/opu/odata/sap/ZPM_MORDER_RESERV_SRV/F4OrderTypes('PM01')",
+				"uri": "http://pgldadfsaph.mypiramal.com:8000/sap/opu/odata/sap/ZPM_MORDER_RESERV_SRV/F4OrderTypes('PM01')",
+				"type": "ZPM_MORDER_RESERV_SRV.F4OrderType"
+			},
+			"OrderType": "PM01",
+			"Text": "Preventive Maintenance order"
+		}, {
+			"__metadata": {
+				"id": "http://pgldadfsaph.mypiramal.com:8000/sap/opu/odata/sap/ZPM_MORDER_RESERV_SRV/F4OrderTypes('PM02')",
+				"uri": "http://pgldadfsaph.mypiramal.com:8000/sap/opu/odata/sap/ZPM_MORDER_RESERV_SRV/F4OrderTypes('PM02')",
+				"type": "ZPM_MORDER_RESERV_SRV.F4OrderType"
+			},
+			"OrderType": "PM02",
+			"Text": "Breakdown Maintenance order"
+		}, {
+			"__metadata": {
+				"id": "http://pgldadfsaph.mypiramal.com:8000/sap/opu/odata/sap/ZPM_MORDER_RESERV_SRV/F4OrderTypes('PM03')",
+				"uri": "http://pgldadfsaph.mypiramal.com:8000/sap/opu/odata/sap/ZPM_MORDER_RESERV_SRV/F4OrderTypes('PM03')",
+				"type": "ZPM_MORDER_RESERV_SRV.F4OrderType"
+			},
+			"OrderType": "PM03",
+			"Text": "Opportunity/Shutdown/Modificn/JobChange"
+		}, {
+			"__metadata": {
+				"id": "http://pgldadfsaph.mypiramal.com:8000/sap/opu/odata/sap/ZPM_MORDER_RESERV_SRV/F4OrderTypes('PM04')",
+				"uri": "http://pgldadfsaph.mypiramal.com:8000/sap/opu/odata/sap/ZPM_MORDER_RESERV_SRV/F4OrderTypes('PM04')",
+				"type": "ZPM_MORDER_RESERV_SRV.F4OrderType"
+			},
+			"OrderType": "PM04",
+			"Text": "Predictive / Condition Based"
+		}, {
+			"__metadata": {
+				"id": "http://pgldadfsaph.mypiramal.com:8000/sap/opu/odata/sap/ZPM_MORDER_RESERV_SRV/F4OrderTypes('PM05')",
+				"uri": "http://pgldadfsaph.mypiramal.com:8000/sap/opu/odata/sap/ZPM_MORDER_RESERV_SRV/F4OrderTypes('PM05')",
+				"type": "ZPM_MORDER_RESERV_SRV.F4OrderType"
+			},
+			"OrderType": "PM05",
+			"Text": "Calibration order"
+		}, {
+			"__metadata": {
+				"id": "http://pgldadfsaph.mypiramal.com:8000/sap/opu/odata/sap/ZPM_MORDER_RESERV_SRV/F4OrderTypes('PM06')",
+				"uri": "http://pgldadfsaph.mypiramal.com:8000/sap/opu/odata/sap/ZPM_MORDER_RESERV_SRV/F4OrderTypes('PM06')",
+				"type": "ZPM_MORDER_RESERV_SRV.F4OrderType"
+			},
+			"OrderType": "PM06",
+			"Text": "AMC Maintenance order"
+		}, {
+			"__metadata": {
+				"id": "http://pgldadfsaph.mypiramal.com:8000/sap/opu/odata/sap/ZPM_MORDER_RESERV_SRV/F4OrderTypes('PM07')",
+				"uri": "http://pgldadfsaph.mypiramal.com:8000/sap/opu/odata/sap/ZPM_MORDER_RESERV_SRV/F4OrderTypes('PM07')",
+				"type": "ZPM_MORDER_RESERV_SRV.F4OrderType"
+			},
+			"OrderType": "PM07",
+			"Text": "Stat. and Compliance Order"
+		}]
+	}
+}
